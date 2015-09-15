@@ -1,0 +1,49 @@
+<html lang="pt-br">
+<head>
+<meta charset="Windows-1252">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprendendo Servlet</title>
+<link rel="stylesheet"
+	href="resources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="resources/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+<link rel='stylesheet' href='resources/style.css'>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">ESTACIONAMENTO - ENTRADA</h3>
+			</div>
+			<div class="panel-body">
+				<table>
+					<caption>Tabela De Preços</caption>
+					<!--<thead>
+						<tr><th>Veículo</th>
+						<th>Lavar</th>
+						<th>Aspirar</th>
+						<th>Encerar</th></tr>
+					</thead>-->
+					<tr><td>Até 15 min</td><td>R$ 0,00</td></tr>
+					<tr><td>De 15 min até 2 horas</td><td>R$ 5,00</td></tr>
+					<tr><td>Hora adicional</td><td>R$ 2,00</td></tr>
+				</table>
+				<form method="post" action="entrada">
+					<div class="form-group">
+						<label>Nome</label> <input type="text" name="nomeCliente"
+							class="form-control" placeholder="Nome do cliente">
+					</div>
+					<div class="form-group">
+						<label>Placa</label> <input type="text" name="placa"
+							class="form-control" placeholder="Placa do veículo">
+					</div>
+					<button type="submit" class="btn btn-default">Gerar cupom</button>
+				</form>
+				<a href='saida.html'><button type='button' class='btn btn-link'>Ir para saída</button></a>
+				<a href='clientes'><button type='button' class='btn btn-link'>Clientes estacionados</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
